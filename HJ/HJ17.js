@@ -6,7 +6,6 @@ const r = readline.createInterface({
 })
 
 let xCoordinate = 0, yCoordinate = 0
-const inputArr = []
 r.on('line', data => {
     const result = data.split(';')
     result.pop()

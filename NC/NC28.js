@@ -11,13 +11,14 @@ function minWindow(S, T) {
     for (const tElement of T) {
         hashT.set(tElement, hashT.get(tElement) + 1 || 1)
     }
+    const targetLength = hashT.size
     let result = ''
     for (let right = 0, left = 0, distance = 0; right < S.length; right++) {
         if (hashT.has(S[right])) {
             hashWindow.set(S[right], hashWindow.get(S[right]) + 1 || 1);
             if (hashWindow.get(S[right]) === hashT.get(S[right])) distance++;
         }
-        while (distance === T.length) {
+        while (distance === targetLength) {
             if (result.length === 0 || result.length > right - left + 1) {
                 result = S.slice(left, right + 1)
             }

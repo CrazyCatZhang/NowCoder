@@ -1,36 +1,35 @@
-const readline = require('readline')
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+let arr = [];
 
-const inputArr = []
-r.on('line', data => {
-    const result = data.split('\\')
-    inputArr.push(result[result.length - 1])
-})
+rl.on("line", (line) => {
+  const end = line.split("\\");
+  const data = end[end.length - 1];
+  const resData = data.split(" ");
+  const firstStr = resData[0];
+  if (firstStr.length > 16) {
+    const subData = firstStr.slice(-16);
+    arr.push(subData + " " + resData[1]);
+  } else {
+    arr.push(data);
+  }
+});
 
-r.on('close', () => {
-    const map = new Map()
-    for (let i = 0; i < inputArr.length; i++) {
-        let [key, value] = inputArr[i].split(' ')
-        if (key.length > 16) {
-            key = key.slice(key.length - 16)
-            inputArr[i] = key + ' ' + value
-        }
-        if (map.has(inputArr[i])) {
-            map.set(inputArr[i], Number(map.get(inputArr[i])) + 1)
-        } else {
-            map.set(inputArr[i], 1)
-        }
+rl.on("close", () => {
+  let obj = {};
+  arr.forEach((item) => {
+    if (!obj[item]) {
+      obj[item] = 1;
+    } else {
+      obj[item] += 1;
     }
-    for (const [key] of map) {
-        if (map.size > 8) {
-            map.delete(key)
-        }
-    }
-    for (const [key, value] of map) {
-        console.log(key, value)
-    }
-})
+  });
+  const resArr = [];
+  for (var key in obj) {
+    resArr.push(key + " " + obj[key]);
+  }
+  if (resArr.length > 8) {
+    resArr.splice(0, resArr.length - 8);
+  }
+  console.log(resArr.join("\n"));
+});

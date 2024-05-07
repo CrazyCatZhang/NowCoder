@@ -1,11 +1,10 @@
-const readline = require('readline')
+/*
+ * The length of the last word of the string
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-r.on('line', function (data) {
-    const result = data.split(' ')
-    console.log(result[result.length - 1].length)
-})
+rl.on("line", (line) => {
+  let arr = line.split(" ");
+  console.log(arr[arr.length - 1].length);
+});

@@ -1,17 +1,20 @@
-const readline = require('readline')
+/*
+ * random number
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-let inputArr = []
-r.on('line', function (data) {
-    inputArr.push(parseInt(data))
-    if (inputArr[0] === inputArr.length - 1) {
-        const newArr = Array.from(new Set(inputArr.slice(1))).sort((a, b) => a - b)
-        for (let i = 0; i < newArr.length; i++) {
-            console.log(newArr[i])
-        }
-    }
-})
+const arr = [];
+
+rl.on("line", (line) => {
+  arr.push(line);
+});
+
+rl.on("close", () => {
+  arr.shift();
+  Array.from(new Set(arr))
+    .sort((a, b) => a - b)
+    .forEach((item) => {
+      console.log(item);
+    });
+});

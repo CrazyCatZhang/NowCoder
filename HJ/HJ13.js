@@ -1,11 +1,9 @@
-const readline = require('readline')
+/*
+ * sentences reverse
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-r.on('line', data => {
-    const result = data.split(' ').reverse()
-    console.log(result.join(' '))
-})
+rl.on("line", (line) => {
+  console.log(line.split(" ").reverse().join(" "));
+});

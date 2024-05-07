@@ -1,19 +1,16 @@
-const readline = require('readline')
+/*
+ * Calculates the number of a character appears
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-let index = 0
-let inputString
-r.on('line', function (data) {
-    index++
-    if (index === 1) {
-        inputString = data
-    } else {
-        const res = inputString.match(new RegExp(data, 'gi'))
-        if (res === null) console.log(0)
-        else console.log(res.length)
-    }
-})
+const arr = [];
+
+rl.on("line", (line) => {
+  arr.push(line);
+});
+
+rl.on("close", () => {
+  const res = arr[0].toLocaleLowerCase();
+  console.log(res.split(arr[1].toLocaleLowerCase()).length - 1);
+});

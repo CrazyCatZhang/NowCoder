@@ -1,14 +1,18 @@
-const readline = require('readline')
+/*
+ * split string
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-r.on('line', function (data) {
-    const num = data.length % 8
-    const result = num === 0 ? data : (data + '0'.repeat(8 - num))
-    for (let i = 0; i < result.length; i += 8) {
-        console.log(result.slice(i, i + 8))
-    }
-})
+function splitStr(str) {
+  if (str.length > 8) {
+    console.log(str.slice(0, 8));
+    splitStr(str.slice(8));
+  } else {
+    console.log(str.padEnd(8, "0"));
+  }
+}
+
+rl.on("line", (line) => {
+  splitStr(line);
+});

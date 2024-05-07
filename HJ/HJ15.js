@@ -1,10 +1,16 @@
-const readline = require('readline')
+/*
+ * The number of 1s in the integer in memory
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-r.on('line', data => {
-    console.log(parseInt(data).toString(2).match(new RegExp('1','gi')).length)
-})
+rl.on("line", (line) => {
+  let res = 0;
+  parseInt(line)
+    .toString(2)
+    .split("")
+    .forEach((e) => {
+      if (e === "1") res++;
+    });
+  console.log(res);
+});

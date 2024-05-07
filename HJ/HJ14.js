@@ -1,18 +1,18 @@
-const readline = require('readline')
+/*
+ * string sort
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-const inputArr = []
-r.on('line', data => {
-    inputArr.push(data)
-    if (parseInt(inputArr[0]) === inputArr.length - 1) {
-        inputArr.shift()
-        inputArr.sort()
-        inputArr.forEach(item => {
-            console.log(item)
-        })
-    }
-})
+const arr = [];
+
+rl.on("line", (line) => {
+  arr.push(line);
+});
+
+rl.on("close", () => {
+  arr.shift();
+  arr.sort().forEach((item) => {
+    console.log(item);
+  });
+});

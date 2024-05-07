@@ -1,11 +1,14 @@
-const readline = require('readline')
+/*
+ * Extract unique integers
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-r.on('line', function (data) {
-    const result = [...new Set(data.split('').reverse())]
-    console.log(parseInt(result.join('')))
-})
+rl.on("line", (line) => {
+  line = line.split("").reverse();
+  let res = "";
+  Array.from(new Set(line)).forEach((item) => {
+    res += item;
+  });
+  console.log(res);
+});

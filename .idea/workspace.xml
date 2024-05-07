@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="b70ce4ae-6230-4f29-a0ca-1daf41b6f7d7" name="Changes" comment="IsPopOrder" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2CK9dmHa9ZuoD4WQ56OSQUKItUL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;javascript.nodejs.core.library.configured.version&quot;: &quot;16.15.0&quot;,
+    &quot;javascript.nodejs.core.library.typings.version&quot;: &quot;16.11.47&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/crazycatzhang/Documents/GitHub/NowCoder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="Node.js.test.js">
+    <configuration name="BM1.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/BM/BM1.js" working-dir="$PROJECT_DIR$/BM">
+      <method v="2" />
+    </configuration>
+    <configuration name="HJ106.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/HJ/HJ106.js" working-dir="$PROJECT_DIR$/HJ">
+      <method v="2" />
+    </configuration>
+    <configuration name="HJ27.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/HJ/HJ27.js" working-dir="$PROJECT_DIR$/HJ">
+      <method v="2" />
+    </configuration>
+    <configuration name="HJ33.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/HJ/HJ33.js" working-dir="$PROJECT_DIR$/HJ">
+      <method v="2" />
+    </configuration>
+    <configuration name="test.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/test.js" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.test.js" />
+        <item itemvalue="Node.js.BM1.js" />
+        <item itemvalue="Node.js.HJ27.js" />
+        <item itemvalue="Node.js.HJ106.js" />
+        <item itemvalue="Node.js.HJ33.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b70ce4ae-6230-4f29-a0ca-1daf41b6f7d7" name="Changes" comment="" />
+      <created>1658540498304</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1658540498304</updated>
+      <workItem from="1658540500333" duration="26758000" />
+      <workItem from="1658629634457" duration="40835000" />
+      <workItem from="1659182242623" duration="716000" />
+      <workItem from="1659602540812" duration="2011000" />
+      <workItem from="1659737542559" duration="148000" />
+      <workItem from="1659834219171" duration="557000" />
+      <workItem from="1659836311276" duration="597000" />
+      <workItem from="1659837697525" duration="22917000" />
+      <workItem from="1660224005188" duration="2629000" />
+    </task>
+    <task id="LOCAL-00015" summary="String sort">
+      <created>1658575714004</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1658575714004</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Find the number of 1's when a positive integer of type int is stored in memory">
+      <created>1658575919297</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1658575919297</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Shopping list">
+      <created>1658627648057</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1658627648057</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Coordinate move">
+      <created>1658629583314</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1658629583314</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Coordinate move">
+      <created>1658629604435</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1658629604435</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Simple error log">
+      <created>1658633221994</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1658633221994</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Password verification qualified program">
+      <created>1658637749720</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1658637749720</updated>
+    </task>
+    <task id="LOCAL-00022" summary="sum of two numbers">
+      <created>1658639641330</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1658639641330</updated>
+    </task>
+    <task id="LOCAL-00023" summary="jumping steps">
+      <created>1658640567714</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1658640567714</updated>
+    </task>
+    <task id="LOCAL-00024" summary="Remove the least number of characters in a string">
+      <created>1658646764891</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1658646764891</updated>
+    </task>
+    <task id="LOCAL-00025" summary="Conversion between integers and IP addresses">
+      <created>1658650062540</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1658650062540</updated>
+    </task>
+    <task id="LOCAL-00026" summary="Input integer array and sort identifier">
+      <created>1658650538017</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1658650538017</updated>
+    </task>
+    <task id="LOCAL-00027" summary="reverse character order">
+      <created>1658650698421</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1658650698421</updated>
+    </task>
+    <task id="LOCAL-00028" summary="find sibling word">
+      <created>1658652281035</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1658652281035</updated>
+    </task>
+    <task id="LOCAL-00029" summary="merge interval">
+      <created>1658658537612</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1658658537612</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Grade order">
+      <created>1658659589074</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1658659589074</updated>
+    </task>
+    <task id="LOCAL-00031" summary="valid parenthesis sequences">
+      <created>1658660968416</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1658660968416</updated>
+    </task>
+    <task id="LOCAL-00032" summary="longest palindromic substring">
+      <created>1658706293227</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1658706293227</updated>
+    </task>
+    <task id="LOCAL-00033" summary="minimal covering substring">
+      <created>1658712789362</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1658712789362</updated>
+    </task>
+    <task id="LOCAL-00034" summary="weighing">
+      <created>1658716790241</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1658716790241</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Least common multiple">
+      <created>1658721585592</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1658721585592</updated>
+    </task>
+    <task id="LOCAL-00036" summary="Prime Companion">
+      <created>1658726420945</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1658726420945</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Find the closest two prime numbers that form an even number">
+      <created>1658727183343</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1658727183343</updated>
+    </task>
+    <task id="LOCAL-00038" summary="ReverseList">
+      <created>1659279052435</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1659279052435</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Update minWindow">
+      <created>1659279093420</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1659279093420</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Reverse the specified range in the linked list">
+      <created>1659620973128</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1659620973128</updated>
+    </task>
+    <task id="LOCAL-00041" summary="printListFromTailToHead">
+      <created>1660190945448</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1660190945448</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Merge List">
+      <created>1660191876494</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1660191876494</updated>
+    </task>
+    <task id="LOCAL-00043" summary="FindFirstCommonNode">
+      <created>1660192723949</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1660192723949</updated>
+    </task>
+    <task id="LOCAL-00044" summary="EntryNodeOfLoop">
+      <created>1660193281562</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1660193281562</updated>
+    </task>
+    <task id="LOCAL-00045" summary="FindKthToTail">
+      <created>1660193530218</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1660193530218</updated>
+    </task>
+    <task id="LOCAL-00046" summary="deleteDuplication">
+      <created>1660195354998</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1660195354998</updated>
+    </task>
+    <task id="LOCAL-00047" summary="TreeDepth">
+      <created>1660195656858</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1660195656858</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Print Tree">
+      <created>1660196680218</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1660196680218</updated>
+    </task>
+    <task id="LOCAL-00049" summary="KthNode">
+      <created>1660197248666</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1660197248666</updated>
+    </task>
+    <task id="LOCAL-00050" summary="reConstructBinaryTree">
+      <created>1660198566214</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1660198566215</updated>
+    </task>
+    <task id="LOCAL-00051" summary="HasSubtree">
+      <created>1660199684002</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1660199684002</updated>
+    </task>
+    <task id="LOCAL-00052" summary="Mirror">
+      <created>1660200185148</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1660200185148</updated>
+    </task>
+    <task id="LOCAL-00053" summary="PrintFromTopToBottom">
+      <created>1660200447132</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1660200447132</updated>
+    </task>
+    <task id="LOCAL-00054" summary="VerifySquenceOfBST">
+      <created>1660201861762</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1660201861762</updated>
+    </task>
+    <task id="LOCAL-00055" summary="hasPathSum">
+      <created>1660202753988</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1660202753989</updated>
+    </task>
+    <task id="LOCAL-00056" summary="FindPath">
+      <created>1660203335888</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1660203335888</updated>
+    </task>
+    <task id="LOCAL-00057" summary="IsBalanced_Solution">
+      <created>1660203882859</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1660203882859</updated>
+    </task>
+    <task id="LOCAL-00058" summary="isSymmetrical">
+      <created>1660204778576</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1660204778576</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Print">
+      <created>1660204985203</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1660204985203</updated>
+    </task>
+    <task id="LOCAL-00060" summary="FindPath">
+      <created>1660205332841</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1660205332841</updated>
+    </task>
+    <task id="LOCAL-00061" summary="lowestCommonAncestor">
+      <created>1660205856651</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1660205856651</updated>
+    </task>
+    <task id="LOCAL-00062" summary="lowestCommonAncestor">
+      <created>1660206051535</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1660206051535</updated>
+    </task>
+    <task id="LOCAL-00063" summary="IsPopOrder">
+      <created>1660207137168</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1660207137168</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Find the closest two prime numbers that form an even number" />
+    <MESSAGE value="ReverseList" />
+    <MESSAGE value="Update minWindow" />
+    <MESSAGE value="Reverse the specified range in the linked list" />
+    <MESSAGE value="printListFromTailToHead" />
+    <MESSAGE value="Merge List" />
+    <MESSAGE value="FindFirstCommonNode" />
+    <MESSAGE value="EntryNodeOfLoop" />
+    <MESSAGE value="FindKthToTail" />
+    <MESSAGE value="deleteDuplication" />
+    <MESSAGE value="TreeDepth" />
+    <MESSAGE value="Print Tree" />
+    <MESSAGE value="KthNode" />
+    <MESSAGE value="reConstructBinaryTree" />
+    <MESSAGE value="HasSubtree" />
+    <MESSAGE value="Mirror" />
+    <MESSAGE value="PrintFromTopToBottom" />
+    <MESSAGE value="VerifySquenceOfBST" />
+    <MESSAGE value="hasPathSum" />
+    <MESSAGE value="IsBalanced_Solution" />
+    <MESSAGE value="isSymmetrical" />
+    <MESSAGE value="Print" />
+    <MESSAGE value="FindPath" />
+    <MESSAGE value="lowestCommonAncestor" />
+    <MESSAGE value="IsPopOrder" />
+    <option name="LAST_COMMIT_MESSAGE" value="IsPopOrder" />
+  </component>
+</project>

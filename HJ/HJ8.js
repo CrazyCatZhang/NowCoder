@@ -1,31 +1,30 @@
-const readline = require('readline')
+/*
+ * Merge table records
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-let inputArr = []
-let num = 0
-const map = new Map()
-r.on('line', function (data) {
-    const result = data.split(' ').map(Number)
-    if (result.length === 1) {
-        num = result[0]
+const arr = [];
+
+rl.on("line", (line) => {
+  arr.push(line);
+});
+
+rl.on("close", () => {
+  arr.shift();
+  const res = {};
+  arr.forEach((item) => {
+    temp = item.split(" ");
+    if (res[temp[0]]) {
+      res[temp[0]] += parseInt(temp[1]);
     } else {
-        inputArr.push(result)
-        const key = result[0]
-        const value = result[1]
-        if (map.has(key)) {
-            map.set(key, map.get(key) + value)
-        } else {
-            map.set(key, value)
-        }
-        if (inputArr.length === num) {
-            const arr = Array.from(map).sort((a, b) => a[0] - b[0])
-            arr.forEach(item => {
-                console.log(item[0] + ' ' + item[1])
-            })
-        }
+      res[temp[0]] = parseInt(temp[1]);
     }
-})
+  });
+
+  for (const key in res) {
+    if (Object.hasOwnProperty.call(res, key)) {
+      console.log(key + " " + res[key]);
+    }
+  }
+});

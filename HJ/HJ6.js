@@ -1,19 +1,36 @@
-const readline = require('readline')
+/*
+ * Prime factors
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-r.on('line', function (data) {
-    let result = parseInt(data)
-    let lineArr = []
-    for (let i = 2; i <= Math.sqrt(result); i++) {
-        while (result % i === 0) {
-            result /= i
-            lineArr.push(i)
-        }
+const isPrime = (num) => {
+  if (num === 1) {
+    return false;
+  }
+  const minIndex = parseInt(Math.sqrt(num));
+  for (let i = 2; i <= minIndex; i++) {
+    if (num % i === 0) {
+      return false;
     }
-    if (result > 1) lineArr.push(result)
-    console.log(lineArr.join(' '))
-})
+  }
+  return true;
+};
+
+rl.on("line", (line) => {
+  line = parseInt(line);
+  const res = [];
+  const minIndex = parseInt(Math.sqrt(line));
+  for (let i = 2; i <= minIndex; i++) {
+    while (line % i === 0) {
+      if (isPrime(i)) {
+        res.push(i);
+      }
+      line /= i;
+    }
+  }
+  if (line > 1) {
+    res.push(line);
+  }
+  console.log(res.join(" "));
+});

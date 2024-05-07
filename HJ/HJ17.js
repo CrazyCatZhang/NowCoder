@@ -1,33 +1,33 @@
-const readline = require('readline')
+/*
+ * Coordinate mobile
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-let xCoordinate = 0, yCoordinate = 0
-r.on('line', data => {
-    const result = data.split(';')
-    result.pop()
-    result.forEach(item => {
-        if (Number(item.slice(1))) {
-            switch (item.slice(0, 1)) {
-                case 'W':
-                    yCoordinate += Number(item.slice(1));
-                    break;
-                case 'A':
-                    xCoordinate -= Number(item.slice(1));
-                    break;
-                case 'S':
-                    yCoordinate -= Number(item.slice(1));
-                    break;
-                case 'D':
-                    xCoordinate += Number(item.slice(1));
-                    break;
-                default:
-                    break;
-            }
-        }
-    })
-    console.log(xCoordinate + ',' + yCoordinate)
-})
+rl.on("line", (line) => {
+  const arr = line.split(";");
+  const res = [0, 0];
+  arr.forEach((item) => {
+    const a = item.slice(0, 1);
+    const b = Number(item.slice(1));
+    if (isNaN(b)) return;
+    switch (a) {
+      case "A":
+        res[0] -= b;
+        break;
+      case "D":
+        res[0] += b;
+        break;
+      case "W":
+        res[1] += b;
+        break;
+      case "S":
+        res[1] -= b;
+        break;
+      default:
+        break;
+    }
+  });
+
+  console.log(res.join(","));
+});

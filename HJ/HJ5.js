@@ -1,9 +1,9 @@
-const readline = require('readline')
+/*
+ * Hexadecimal conversion
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
-r.on('line', function (data) {
-    console.log(parseInt(data))
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
+
+rl.on("line", (line) => {
+  console.log(parseInt(line, 16));
+});

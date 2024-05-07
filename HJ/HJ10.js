@@ -1,11 +1,9 @@
-const readline = require('readline')
+/*
+ * character count
+ */
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-r.on('line', function (data) {
-    const result = [...new Set(data.split(''))]
-    console.log(result.length)
-})
+rl.on("line", (line) => {
+  console.log(Array.from(new Set(line.split(""))).length);
+});

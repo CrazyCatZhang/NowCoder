@@ -1,28 +1,49 @@
-const readline = require('readline')
+const rl = require("readline").createInterface(process.stdin, process.stdout);
 
-const r = readline.createInterface({
-    input: process.stdin,
-    output: process.stdout
-})
+const res = [];
 
-r.on('line', data => {
-    console.log(isQualified(data) ? 'OK' : 'NG')
-})
+rl.on("line", (line) => {
+  res.push(line);
+});
 
-function isQualified(str) {
-    let correctCount = 0
-    if (str.length < 9 || str.includes(' ') || str.includes('\n')) return false
-    if (/[A-Z]/.test(str)) correctCount++
-    if (/[a-z]/.test(str)) correctCount++
-    if (/\d/.test(str)) correctCount++
-    if (/[^A-z\d]/.test(str)) correctCount++
-    if (correctCount < 3) return false
-    const map = new Map()
-    for (let i = 0; i < str.length; i++) {
-        let substring = str.substring(i, i + 3)
-        if (substring.length < 3) continue
-        if (map.has(substring)) return false
-        else map.set(substring, 1)
+rl.on("close", () => {
+  res.forEach((item) => {
+    if (validPassword(item) && isSubString(item)) {
+      console.log("OK");
+    } else {
+      console.log("NG");
     }
-    return true
+  });
+});
+
+function validPassword(password) {
+  if (password.length <= 8) {
+    return false;
+  }
+  const reg1 = /[A-Z]/;
+  const reg2 = /[a-z]/;
+  const reg3 = /\d/;
+  const reg4 = /[^A-Za-z0-9]/;
+  let count = 0;
+  if (reg1.test(password)) count++;
+  if (reg2.test(password)) count++;
+  if (reg3.test(password)) count++;
+  if (reg4.test(password)) count++;
+  if (count >= 3) {
+    return true;
+  }
+  return false;
+}
+
+function isSubString(str) {
+  let arr = [];
+  for (let i = 0; i < str.length - 2; i++) {
+    const subStr = str.slice(i, i + 3);
+    if (arr.includes(subStr)) {
+      return false;
+    } else {
+      arr.push(subStr);
+    }
+  }
+  return true;
 }

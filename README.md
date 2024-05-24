@@ -1,2 +1,2 @@
 # NowCoder
-NowCoder brush questions record:santa:
+NowCoder brush questions record 🎅🏿
